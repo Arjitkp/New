@@ -42,7 +42,7 @@ plot_geo(New_A_loc,
                                    width = 0.5))) %>%
   add_markers(
     data = New_A_loc, x = ~Long, y = ~Lat, sizes = c(1, 450),
-    hoverinfo = "text",text = ~New_A_loc$City, alpha = 0.5
+    hoverinfo = "text",text = ~City, alpha = 0.5
   ) %>%
   layout(geo = g)
 
