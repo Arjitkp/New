@@ -41,7 +41,7 @@ plot_geo(New_A_loc,
                        line = list(color = toRGB("purple"),
                                    width = 0.5))) %>%
   add_markers(
-    data = New_A_loc, x = ~Long, y = ~Lat, sizes = c(1, 450),
+    data = New_A_loc, x = ~Long, y = ~Lat,
     hoverinfo = "text",text = ~City, alpha = 0.5
   ) %>%
   layout(geo = g)
